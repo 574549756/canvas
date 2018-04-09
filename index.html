@@ -3,14 +3,35 @@
     <link rel="stylesheet" href="./style.css">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
   <title>JS Bin</title>
 </head>
 <body>
     <canvas id="xxx" width=300 height=300></canvas>
-	<div id=actions class="actions">
-	  <button id=eraser>橡皮擦</button>
-	  <button id=brush>画笔</button>
+	<div class="actions">
+        <svg id="pen" class="icon active">
+            <use xlink:href="#icon-pencil"></use>
+        </svg>
+        <svg id="eraser" class="icon">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+        <svg id="clear" class="icon">
+            <use xlink:href="#icon-clear"></use>
+        </svg>
     </div>
+    <ol class="colors">
+        <li id="black" class="black active"></li>
+        <li id="red" class="red"></li>
+        <li id="green" class="green"></li>
+        <li id="blue" class="blue"></li>
+        <li id="yellow" class="yellow"></li>
+    </ol>
+    <ol class="size">
+        <li id="board" class="board"></li>
+        <li id="thick" class="thick"></li>
+        <li id="thin" class="thin active"></li>
+    </ol>
     <script src="./main.js"></script>
+    <script src = "//at.alicdn.com/t/font_620312_ztxef7l8tt65hfr.js"></script>
 </body>
 </html>
