@@ -24,6 +24,15 @@ clear.onclick = function(){
 	pen.classList.remove("active")
 	eraser.classList.remove("active")
 }
+download.onclick = function(){
+	var url = yyy.toDataURL("image/png")
+	var a = document.createElement('a')
+	document.body.appendChild(a)
+	a.href = url
+	a.download = '未标题'
+	a.target = '_blank'
+	a.click()
+}
 black.onclick = function(){
 	context.fillStyle = 'black'
 	black.classList.add('active')

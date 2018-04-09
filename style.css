@@ -38,6 +38,13 @@ body{
 	fill: red;
 	transform: scale(1.2);
 }
+#download{
+	position: fixed;
+	top: 1px;
+	right: 10px;
+	width: 1.46em;
+	height: 1.46em;
+}
 .colors{
 	position: fixed;
 	top: 50px;
