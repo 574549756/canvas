@@ -79,7 +79,7 @@ yellow.onclick = function(){
 }
 
 
-thin.onclick = function(){icon-clear1
+thin.onclick = function(){
 	lineWidth = 3
 	thin.classList.add('active')
 	thick.classList.remove('active')
